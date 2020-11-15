@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Calculadora.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>Calculadora RPN</title>
+</head>
+
+<body>
+    <header>
+        <h1>Calculadora RPN</h1>
+    </header>
+    <section>
+        <textarea id="pantalla" disabled=""></textarea>
+        <input type="text" id="input"></textarea>
+        <button class="button" type="button" onclick="controller.run((p)=>CalculadoraRPN.pow(p,2))">x&sup2;</button>
+        <button class="button" type="button" onclick="controller.run(CalculadoraRPN.pow)">x&#x207f;</button>
+        <button class="button" type="button" onclick="controller.run(CalculadoraRPN.sin)">sin</button>
+        <button class="button" type="button" onclick="controller.run(CalculadoraRPN.cos)">cos</button>
+        <button class="button" type="button" onclick="controller.run(CalculadoraRPN.tan)">tan</button>
+        <button class="button" type="button" onclick="controller.run(CalculadoraRPN.sqrt)">√</button>
+        <button class="button" type="button" onclick="controller.run((power)=>CalculadoraRPN.log(10,power))">10&#x207f;</button>
+        <button class="button" type="button" onclick="controller.run(CalculadoraRPN.log)">log</button>
+        <button class="button" type="button" onclick="controller.run(CalculadoraRPN.mod)">Mod</button>
+        <button class="button" type="button" onclick="controller.clearScreen()">C</button>
+        <button class="button" type="button" onclick="controller.deleteLastScreen">DEL</button>
+        <button class="button" type="button" onclick="controller.run(CalculadoraRPN.divide)">&div;</button>
+        <button class="button number" type="button" onclick="controller.writeToScreen(7)">7</button>
+        <button class="button number" type="button" onclick="controller.writeToScreen(8)">8</button>
+        <button class="button number" type="button" onclick="controller.writeToScreen(9)">9</button>
+        <button class="button" type="button" onclick="controller.writeToScreen(Math.PI)">&Pi;</button>
+        <button class="button" type="button" onclick="controller.run(CalculadoraRPN.multiply)">*</button>
+        <button class="button number" type="button" onclick="controller.writeToScreen(4)">4</button>
+        <button class="button number" type="button" onclick="controller.writeToScreen(5)">5</button>
+        <button class="button number" type="button" onclick="controller.writeToScreen(6)">6</button>
+        <button class="button" type="button" onclick="controller.run(CalculadoraRPN.substract)">-</button>
+        <button class="button" type="button" onclick="controller.run(CalculadoraRPN.add)">+</button>
+        <button class="button number" type="button" onclick="controller.writeToScreen(1)">1</button>
+        <button class="button number" type="button" onclick="controller.writeToScreen(2)">2</button>
+        <button class="button number" type="button" onclick="controller.writeToScreen(3)">3</button>
+        <button class="button" type="button" onclick="controller.writeToScreen(1)">.</button>
+        <button class="button enter" type="button" onclick="controller.enter()">ENTER</button>
+        <button class="button number" type="button" onclick="controller.writeToScreen(0)">0</button>
+    </section>
+    <script src="Calculadora.js"></script>
+</body>
+
+</html>
