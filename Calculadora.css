@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-  }
+}
 
 body {
     background-color: #ffc1e3;
@@ -11,9 +11,12 @@ h1 {
     text-align: center;
 }
 
-
 label {
-    visibility: hidden;
+    display: none;
+}
+
+section header {
+    display: none;
 }
 
 section {
