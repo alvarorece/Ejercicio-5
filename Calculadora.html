@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="Calculadora.css">
-    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora RPN</title>
 </head>
 
@@ -13,7 +13,12 @@
         <h1>Calculadora RPN</h1>
     </header>
     <section>
-        <textarea id="pantalla" disabled=""></textarea>
+        <header>
+            <h2>Input</h2>
+        </header>
+        <label for="pantalla">Input</label>
+        <input id="pantalla" type="text" disabled="">
+        <label for="input">Input</label>
         <input type="text" id="input"></textarea>
         <button class="button" type="button" onclick="controller.run((p)=>CalculadoraRPN.pow(p,2))">x&sup2;</button>
         <button class="button" type="button" onclick="controller.run(CalculadoraRPN.pow)">x&#x207f;</button>
@@ -21,7 +26,8 @@
         <button class="button" type="button" onclick="controller.run(CalculadoraRPN.cos)">cos</button>
         <button class="button" type="button" onclick="controller.run(CalculadoraRPN.tan)">tan</button>
         <button class="button" type="button" onclick="controller.run(CalculadoraRPN.sqrt)">√</button>
-        <button class="button" type="button" onclick="controller.run((power)=>CalculadoraRPN.log(10,power))">10&#x207f;</button>
+        <button class="button" type="button"
+            onclick="controller.run((power)=>CalculadoraRPN.log(10,power))">10&#x207f;</button>
         <button class="button" type="button" onclick="controller.run(CalculadoraRPN.log)">log</button>
         <button class="button" type="button" onclick="controller.run(CalculadoraRPN.mod)">Mod</button>
         <button class="button" type="button" onclick="controller.clearScreen()">C</button>

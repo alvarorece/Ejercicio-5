@@ -11,6 +11,11 @@ h1 {
     text-align: center;
 }
 
+
+label {
+    visibility: hidden;
+}
+
 section {
     display: grid;
     grid-template-columns: auto auto auto auto;
